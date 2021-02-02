@@ -3,6 +3,7 @@
   background-color: #eee;
   font-size: 2.5vmin;
   line-height: 4vmin;
+  text-align: center;
   color: #333;
   width: 98%;
   height: 100%;
@@ -13,15 +14,11 @@
   border-radius: 1vmin;
 }
 
-#title-div {
-  text-align: center;
-}
-
 #title-div h1 {
   font-size: 6vmin;
 }
 
-#img-div figure {
+#img-div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,13 +29,12 @@
   padding: 1vmin;
 }
 
-#img-div figure img {
+#image {
   max-width: 85%;
   height: auto;
 }
 
 #img-caption {
-  text-align: center;
   margin: 3vmin 0vmin 3vmin 0vmin;
 }
 
@@ -47,13 +43,13 @@
   width: 55%;
 }
 #timeline-div h2 {
-  text-align: center;
   font-size: 3vmin;
   margin-top: 8vmin;
   margin-bottom: 8vmin;
 }
 
 #timeline-div ul li{
+  text-align: left;
   margin-bottom: 1vmin;
   padding: 1vmin;
 }
@@ -74,5 +70,4 @@
 #link-div p {
   font-size: 3vmin;
   font-weight: bold;
-  text-align: center;
 }
