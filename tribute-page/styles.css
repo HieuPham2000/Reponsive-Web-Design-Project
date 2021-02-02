@@ -1,0 +1,78 @@
+#main {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eee;
+  font-size: 2.5vmin;
+  line-height: 4vmin;
+  color: #333;
+  width: 98%;
+  height: 100%;
+  margin: auto;
+  margin-top: 5vmin;
+  margin-bottom: 5vmin;
+  padding: 5vmin 2vmin 3vmin 2vmin;
+  border-radius: 1vmin;
+}
+
+#title-div {
+  text-align: center;
+}
+
+#title-div h1 {
+  font-size: 6vmin;
+}
+
+#img-div figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  margin: auto;
+  width: 99%;
+  padding: 1vmin;
+}
+
+#img-div figure img {
+  max-width: 85%;
+  height: auto;
+}
+
+#img-caption {
+  text-align: center;
+  margin: 3vmin 0vmin 3vmin 0vmin;
+}
+
+#timeline-div {
+  margin: auto;
+  width: 55%;
+}
+#timeline-div h2 {
+  text-align: center;
+  font-size: 3vmin;
+  margin-top: 8vmin;
+  margin-bottom: 8vmin;
+}
+
+#timeline-div ul li{
+  margin-bottom: 1vmin;
+  padding: 1vmin;
+}
+
+#quote-div {
+  margin: auto;
+  margin-top: 8vmin;
+  margin-bottom: 8vmin;
+  width: 55%;
+  text-align: justify;
+  font-style: italic;
+}
+
+#link-div {
+  margin: auto;
+}
+
+#link-div p {
+  font-size: 3vmin;
+  font-weight: bold;
+  text-align: center;
+}
