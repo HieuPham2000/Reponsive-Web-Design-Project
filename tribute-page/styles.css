@@ -5,69 +5,70 @@
   line-height: 4vmin;
   text-align: center;
   color: #333;
-  width: 98%;
-  height: 100%;
-  margin: auto;
-  margin-top: 5vmin;
-  margin-bottom: 5vmin;
-  padding: 5vmin 2vmin 3vmin 2vmin;
+  margin: 3vmin 1vmin;
+  padding: 5vmin 2vmin 2vmin 2vmin;
   border-radius: 1vmin;
 }
 
-#title-div h1 {
+@media (max-width: 450px) {
+  #main {
+    margin: 0vmin;
+  }
+}
+
+h1 {
   font-size: 6vmin;
 }
 
+@media (max-width: 450px) {
+  h1 {
+    font-size: 5vmin;
+  }
+}
+
 #img-div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   background-color: #fff;
-  margin: auto;
-  width: 99%;
   padding: 1vmin;
+  margin: 0vmin;
 }
 
 #image {
-  max-width: 85%;
+  max-width: 100%;
   height: auto;
 }
 
 #img-caption {
-  margin: 3vmin 0vmin 3vmin 0vmin;
+  margin: 5vmin 0vmin 5vmin 0vmin;
 }
 
-#timeline-div {
-  margin: auto;
-  width: 55%;
+@media (max-width: 450px) {
+  #img-caption {
+    font-size: 2vmin;
+  }
 }
-#timeline-div h2 {
+
+h2 {
   font-size: 3vmin;
   margin-top: 8vmin;
   margin-bottom: 8vmin;
 }
 
-#timeline-div ul li{
+ul {
+  margin: auto;
+  width: 55%;
+}
+
+li{
   text-align: left;
   margin-bottom: 1vmin;
   padding: 1vmin;
 }
 
-#quote-div {
-  margin: auto;
-  margin-top: 8vmin;
-  margin-bottom: 8vmin;
+blockquote {
+  margin: 8vmin auto;
   width: 55%;
   text-align: justify;
   font-style: italic;
 }
 
-#link-div {
-  margin: auto;
-}
 
-#link-div p {
-  font-size: 3vmin;
-  font-weight: bold;
-}
