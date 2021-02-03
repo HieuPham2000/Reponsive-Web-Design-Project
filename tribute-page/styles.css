@@ -10,9 +10,9 @@
   border-radius: 1vmin;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 460px) {
   #main {
-    margin: 0vmin;
+    margin: 0;
   }
 }
 
@@ -20,7 +20,7 @@ h1 {
   font-size: 6vmin;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 460px) {
   h1 {
     font-size: 5vmin;
   }
@@ -43,9 +43,9 @@ h1 {
   margin: 5vmin 0vmin 5vmin 0vmin;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 460px) {
   #img-caption {
-    font-size: 2vmin;
+    font-size: 1.5vmin;
   }
 }
 
@@ -60,6 +60,12 @@ ul {
   width: 55%;
 }
 
+@media (max-width: 460px) {
+  ul {
+    width: 90%;
+  }
+}
+
 li{
   text-align: left;
   margin-bottom: 1vmin;
@@ -71,6 +77,12 @@ blockquote {
   width: 55%;
   text-align: justify;
   font-style: italic;
+}
+
+@media (max-width: 460px) {
+  blockquote {
+    width: 90%;
+  }
 }
 
 
