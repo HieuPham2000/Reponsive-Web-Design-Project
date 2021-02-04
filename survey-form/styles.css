@@ -1,6 +1,11 @@
 html {
   font-size: 10px;
   height: 100%; /*có cần thiết??? */
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
 }
 /* body{
   background-image: linear-gradient(rgba(58, 58, 158, 0.8), rgba(58, 58, 158, 0.8)), url("https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg");
@@ -17,10 +22,13 @@ body {
   color: #ffffff;
   font-size: 2rem;
   line-height: 3rem;
+
+  /*user-agent => margin: 8px ??? */
+  margin: 0;
 }
 /*peseudo child of body, thay = ::after được không*/
 /* Q&A: https://forum.freecodecamp.org/t/why-does-body-before-code-work-and-not-body/350130 */
-body::after {
+body::before {
   content: "";
   position: fixed;
   top: 0;
