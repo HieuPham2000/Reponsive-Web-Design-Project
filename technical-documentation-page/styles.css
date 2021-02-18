@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 10px;
+  color: #555;
+  margin: 0;
+  padding: 0;
+  scrollbar-width: 5px;
+}
+
+.container {
+  position: relative;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+header {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: black;
+}
+
+#navbar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 0;
+  left: 0;
+  border-right: 3px solid #888;
+  width: auto;
+  max-width: calc(100%/3);
+  height: 100%;
+}
+
+#navbar > header {
+  position: sticky;
+  margin: 1.5rem auto;
+}
+
+#navbar > ul {
+  padding: 0; /*chống lại user agent*/
+  margin: 0;
+  height: 100%;
+  overflow-y:auto;
+}
+
+#navbar > ul > li {
+ list-style: none;
+ border-top: 1px solid black;
+ padding: 5px;
+ margin: 0;
+}
+
+.nav-link {
+  color: inherit;
+  padding: 15px;
+  text-decoration: none;
+}
+
+#main-doc {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  max-width: calc(100%*2/3);
+  margin: 20px;
+  margin-left: calc(100%/3);
+  padding: 0;
+}
+
+.main-section {
+  margin: 20px auto;
+}
+
+.main-section > header {
+  margin-left: 0px;
+}
+
+.content > p {
+  margin-left: 15px;
+}
+
+.content > code {
+  display: block;
+  background-color: #eee;
+  font-size: 1rem;
+  padding: 15px;
+  margin-left: 30px;
+}
+
+@media (max-width: 800px) {
+  #navbar {
+    position: relative;
+    max-width: 100%;
+    border: none;
+  }
+  #navbar > ul {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #888;
+    border-bottom: 3px solid #888;
+  }
+  #main-doc {
+    position: relative;
+    max-width: 100%;
+    margin: 20px;
+  }
+}
