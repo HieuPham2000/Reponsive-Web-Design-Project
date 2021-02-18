@@ -108,15 +108,27 @@ input[type="submit"]:hover, button:hover {
     background-color: orange;
   }
 }
-
+#features {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 0;
+}
 .feature-div {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 
 .icon  {
   width: 20%;
+}
+
+@media (max-width: 460px) {
+  .icon {
+    display: none;
+  }
 }
 
 i {
@@ -138,6 +150,16 @@ i {
   padding: 0rem;
   border: none;
   max-width: 100%;
+}
+
+@media (max-width: 460px) {
+  #how-it-works {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #video {
+    width: 100%;
+  }
 }
 
 li {
@@ -176,7 +198,7 @@ ul {
   background-color: #ccc;
   padding: 0.5rem 1rem
 }
-@media (max-width: 460px) {
+@media (max-width: 800px) {
   #pricings {
     width: 100%;
    /*  flex-direction: column; */
