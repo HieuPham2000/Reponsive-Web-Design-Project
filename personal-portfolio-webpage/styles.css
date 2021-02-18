@@ -1,0 +1,159 @@
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-size: 20px;
+  background-color: #555;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  margin: 0px;
+  padding: 0px;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+  color: inherit;
+  font-size: inherit;
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  position: fixed;
+  top: 0; /* chú ý phải có */
+  left: 0;
+  width: 100%;
+  background-color: black;
+  box-shadow: 0px 2px 5px 2px rgb(20, 20, 20, 0.3);/* box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit; */
+  margin: 0px;
+}
+#navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 40px;
+}
+#navbar > a {
+  display: inline-block;
+  text-decoration: none;
+  vertical-align: middle;
+  padding: 20px;
+  height: 100%;
+}
+#navbar > a:hover {
+  background-color: rgb(0, 0, 139, 0.5);
+}
+
+#welcome-section {
+  height: 100vh; /*cách để height full device-height*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(35deg, #000 0%, #333 100%);
+ /*  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%); */
+  margin: 0px;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+#welcome-section > p {
+  margin: 20px auto;
+  font-size: 25px;
+  font-style: italic;
+  color: #888;
+}
+
+#projects {
+  background: #888;
+}
+
+#projects > h2 {
+  font-size: 40px;
+  padding: 40px;
+  text-align: center;
+  width: auto;
+  margin: 0 auto;
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 40px;
+  padding: 30px;
+}
+
+.project-grid > a {
+  display: block;
+  text-decoration: none;
+}
+
+/* cảm giác bị giật khi hover */
+/* .project-grid > a :hover ::before {
+  content: "<";
+  color: orange;
+}
+
+.project-grid > a :hover ::after {
+  content: "/>";
+  color: orange;
+} */
+
+
+
+img {
+  display: block; /*quan trọng, nếu không sẽ có 1 dải trắng nhỏ ở giữa img và p */
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.project-caption {
+  width: 100%;
+  background-color: #333;
+  text-align: center;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-shadow: 0px 2px 5px 2px rgb(20, 20, 20, 0.3);
+  margin: 0px;
+  padding: 15px;
+}
+
+/* span {
+  color: #333;
+}
+
+.project-tile:hover span {
+  color: orange;
+} */
+
+.project-tile > p::before {
+  content: "< ";
+  color: #333;
+}
+
+.project-tile > p::after {
+  content: " />";
+  /* white-space: pre; */
+  color: #333;
+}
+
+.project-tile:hover > p::before {
+  color: orange;
+  transition: color 0.3s;
+}
+
+.project-tile:hover > p::after {
+  color: orange;
+  transition: color 0.3s;
+}
+
